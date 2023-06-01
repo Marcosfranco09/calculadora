@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="/EDU-MAT.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="   crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Calculadora</title>
 </head>
 <body>
@@ -30,8 +31,10 @@
         <button onclick="appendOperator('-')">-</button>
         <button onclick="appendNumber('*')">x</button>
         <button onclick="appendOperator('/')">%</button>
+        <button id="backspace-btn" class="atras"> <i class="fa-solid fa-arrow-right fa-flip-horizontal"></i></button>
         <button onclick="clearResult()">C</button>
         <button onclick="calculate()">=</button>
+
         </div>
     </div>    
     <script src="script.js"></script>

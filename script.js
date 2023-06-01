@@ -1,3 +1,5 @@
+var backspaceBtn = document.getElementById('backspace-btn');
+
 function appendNumber(number) {
     document.getElementById('result').value += number;
 }
@@ -14,3 +16,7 @@ function calculate() {
 function clearResult() {
     document.getElementById('result').value = '';
 }
+
+backspaceBtn.addEventListener('click', function() {
+    result.value = result.value.slice(0, -1);
+});
